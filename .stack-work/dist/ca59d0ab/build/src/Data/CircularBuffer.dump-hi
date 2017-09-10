@@ -1,0 +1,690 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-10 23:20:38.9580327 UTC
+
+interface circular-buffer-0.1.0.0-LXs98pV3tAc6KssAaDkw8s:Data.CircularBuffer 8002
+  interface hash: 6159188e27d98d604b1301aca2100b7e
+  ABI hash: c9cc8d4255abcd063d5f28e4300f984f
+  export-list hash: bc4e63dddfffa6740f7a4c7f88721be2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f2d6f8933638e2db8aa30c82acf7b660
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.CircularBuffer.append
+  Data.CircularBuffer.new
+  Data.CircularBuffer.toList
+  Data.CircularBuffer.CircularBuffer{Data.CircularBuffer.CircularBuffer capacity dial elements size}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Functor 682cc832c233b71cec70179490a08631
+import  -/  base-4.9.1.0:Data.IORef c73d02c54df09a5b747108a87da60f73
+import  -/  base-4.9.1.0:Data.Traversable 078621b399ac9374b02f3f2ce55a08e9
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.IORef b977a2a1741af520d9defa4a879c1ccf
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base 2130369f42f829e165fae5628b5932b8
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Mutable 4bfc3a29e83ff340e94b1c251dcd610f
+23847ab1185b53234382a89387df1c98
+  $tc'CircularBuffer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12001714268070670415##
+                   12871106497031752178##
+                   Data.CircularBuffer.$trModule
+                   Data.CircularBuffer.$tc'CircularBuffer1) -}
+5fd9ada15774a20856924c5228a1e3ff
+  $tc'CircularBuffer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CircularBuffer"#) -}
+6617c85c0207c361dfce7fec6c97fd95
+  $tcCircularBuffer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11744904940963166355##
+                   12075898523746660178##
+                   Data.CircularBuffer.$trModule
+                   Data.CircularBuffer.$tcCircularBuffer1) -}
+387c1408032fb44f846f9654b93d0b2d
+  $tcCircularBuffer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CircularBuffer"#) -}
+8f39d1b0b50b348c30906897ca7b1653
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.CircularBuffer.$trModule2
+                   Data.CircularBuffer.$trModule1) -}
+0f971a362af3766a29126187a3309e1e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Data.CircularBuffer"#) -}
+57dbd60a9aa0921848f396acc00e22ba
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "circular-buffer-0.1.0.0-LXs98pV3tAc6KssAaDkw8s"#) -}
+fd45ec9b38e89bd8e3dc31ad14de69cc
+  $wappend ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.Vector.Unboxed.Base.IOVector a
+    -> GHC.Prim.Int#
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int
+    -> a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.CircularBuffer.CircularBuffer a #)
+  {- Arity: 7,
+     Strictness: <S(SL),1*U(1*U,A)><L,U><L,U><L,1*U(U)><S,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (ww :: Data.Vector.Unboxed.Base.IOVector a)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.IORef.IORef GHC.Types.Int)
+                   (ww3 :: GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int)
+                   (w1 :: a)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ww3
+                        w2 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { GHC.Types.I# x ->
+                 let {
+                   $dMVector :: Data.Vector.Generic.Base.Vector
+                                  Data.Vector.Unboxed.Base.Vector a
+                   = Data.Vector.Unboxed.Base.$p1Unbox @ a w
+                 } in
+                 let {
+                   $dMVector1 :: Data.Vector.Generic.Mutable.Base.MVector
+                                   (Data.Vector.Generic.Base.Mutable
+                                      Data.Vector.Unboxed.Base.Vector)
+                                   a
+                   = Data.Vector.Generic.Base.$p1Vector
+                       @ Data.Vector.Unboxed.Base.Vector
+                       @ a
+                       $dMVector
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# x 0#) of wild1 {
+                   GHC.Types.False
+                   -> case Data.Vector.Generic.Mutable.Base.basicLength
+                             @ Data.Vector.Unboxed.Base.MVector
+                             @ a
+                             $dMVector1
+                               `cast`
+                             (Data.Vector.Generic.Mutable.Base.MVector
+                                (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                             @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                             ww
+                               `cast`
+                             (Data.Vector.Unboxed.Base.MVector
+                                (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                <a>_N)_R of wild2 { GHC.Types.I# n# ->
+                      case Data.CircularBuffer.append3 n# x
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.CircularBuffer.CircularBuffer a #)
+                      of {} }
+                   GHC.Types.True
+                   -> case Data.Vector.Generic.Mutable.Base.basicLength
+                             @ Data.Vector.Unboxed.Base.MVector
+                             @ a
+                             $dMVector1
+                               `cast`
+                             (Data.Vector.Generic.Mutable.Base.MVector
+                                (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                             @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                             ww
+                               `cast`
+                             (Data.Vector.Unboxed.Base.MVector
+                                (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                <a>_N)_R of wild2 { GHC.Types.I# y ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# x y) of wild3 {
+                        GHC.Types.False
+                        -> case Data.CircularBuffer.append3 y x
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     Data.CircularBuffer.CircularBuffer a #)
+                           of {}
+                        GHC.Types.True
+                        -> case (Data.Vector.Generic.Mutable.Base.basicUnsafeWrite
+                                   @ Data.Vector.Unboxed.Base.MVector
+                                   @ a
+                                   $dMVector1
+                                     `cast`
+                                   (Data.Vector.Generic.Mutable.Base.MVector
+                                      (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                                   @ GHC.Types.IO
+                                   Control.Monad.Primitive.$fPrimMonadIO
+                                   ww
+                                     `cast`
+                                   (Data.Vector.Unboxed.Base.MVector
+                                      (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])) <a>_N)_R
+                                   wild
+                                   w1)
+                                  `cast`
+                                (GHC.Types.N:IO[0] <()>_R)
+                                  ipv of ds2 { (#,#) ipv2 ipv3 ->
+                           case ww2
+                                  `cast`
+                                (GHC.IORef.N:IORef[0] <GHC.Types.Int>_N) of wild4 { GHC.STRef.STRef var# ->
+                           case GHC.Prim.readMutVar#
+                                  @ GHC.Prim.RealWorld
+                                  @ GHC.Types.Int
+                                  var#
+                                  ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                           case ipv5 of wild5 { GHC.Types.I# x1 ->
+                           let {
+                             y1 :: GHC.Prim.Int# = GHC.Prim.+# x1 1#
+                           } in
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<=# ww1 y1) of wild6 {
+                             GHC.Types.False
+                             -> case GHC.Prim.writeMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       var#
+                                       (GHC.Types.I# y1)
+                                       ipv4 of s2# { DEFAULT ->
+                                case GHC.Prim.readMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       ww3
+                                       s2# of ds4 { (#,#) ipv6 ipv7 ->
+                                case case ww1 of wild7 {
+                                       DEFAULT
+                                       -> case ipv7 of wild8 { GHC.Types.I# x2 ->
+                                          case GHC.Classes.modInt#
+                                                 (GHC.Prim.+# x2 1#)
+                                                 wild7 of ww4 { DEFAULT ->
+                                          GHC.Types.I# ww4 } }
+                                       -1# -> Data.CircularBuffer.append2
+                                       0#
+                                       -> case GHC.Real.divZeroError
+                                          ret_ty GHC.Types.Int
+                                          of {} } of x' { GHC.Types.I# ipv8 ->
+                                case GHC.Prim.writeMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       ww3
+                                       x'
+                                       ipv6 of s2#1 { DEFAULT ->
+                                (# s2#1,
+                                   Data.CircularBuffer.CircularBuffer
+                                     @ a
+                                     ww
+                                     ww1
+                                     wild4 `cast` (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                     (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ww3)
+                                       `cast`
+                                     (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N) #) } } } }
+                             GHC.Types.True
+                             -> case GHC.Prim.writeMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       var#
+                                       (GHC.Types.I# ww1)
+                                       ipv4 of s2# { DEFAULT ->
+                                case GHC.Prim.readMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       ww3
+                                       s2# of ds4 { (#,#) ipv6 ipv7 ->
+                                case case ww1 of wild7 {
+                                       DEFAULT
+                                       -> case ipv7 of wild8 { GHC.Types.I# x2 ->
+                                          case GHC.Classes.modInt#
+                                                 (GHC.Prim.+# x2 1#)
+                                                 wild7 of ww4 { DEFAULT ->
+                                          GHC.Types.I# ww4 } }
+                                       -1# -> Data.CircularBuffer.append2
+                                       0#
+                                       -> case GHC.Real.divZeroError
+                                          ret_ty GHC.Types.Int
+                                          of {} } of x' { GHC.Types.I# ipv8 ->
+                                case GHC.Prim.writeMutVar#
+                                       @ GHC.Prim.RealWorld
+                                       @ GHC.Types.Int
+                                       ww3
+                                       x'
+                                       ipv6 of s2#1 { DEFAULT ->
+                                (# s2#1,
+                                   Data.CircularBuffer.CircularBuffer
+                                     @ a
+                                     ww
+                                     ww1
+                                     wild4 `cast` (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                     (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ww3)
+                                       `cast`
+                                     (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N) #) } } } } } } } } } } } } } }) -}
+a8f9446d350c19fca3ea16986e90766f
+  $wnew ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.CircularBuffer.CircularBuffer a #)
+  {- Arity: 3, Strictness: <S(SL),1*U(1*U,A)><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild1 {
+                   GHC.Types.False
+                   -> case Data.CircularBuffer.new2 @ a ww
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.CircularBuffer.CircularBuffer a #)
+                      of {}
+                   GHC.Types.True
+                   -> let {
+                        $dMVector :: Data.Vector.Generic.Base.Vector
+                                       Data.Vector.Unboxed.Base.Vector a
+                        = Data.Vector.Unboxed.Base.$p1Unbox @ a w
+                      } in
+                      let {
+                        $dMVector1 :: Data.Vector.Generic.Mutable.Base.MVector
+                                        (Data.Vector.Generic.Base.Mutable
+                                           Data.Vector.Unboxed.Base.Vector)
+                                        a
+                        = Data.Vector.Generic.Base.$p1Vector
+                            @ Data.Vector.Unboxed.Base.Vector
+                            @ a
+                            $dMVector
+                      } in
+                      case (Data.Vector.Generic.Mutable.Base.basicUnsafeNew
+                              @ Data.Vector.Unboxed.Base.MVector
+                              @ a
+                              $dMVector1
+                                `cast`
+                              (Data.Vector.Generic.Mutable.Base.MVector
+                                 (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                              @ GHC.Types.IO
+                              Control.Monad.Primitive.$fPrimMonadIO
+                              (GHC.Types.I# ww))
+                             `cast`
+                           (GHC.Types.N:IO[0]
+                                <Data.Vector.Unboxed.Base.MVector
+                                   (Control.Monad.Primitive.PrimState GHC.Types.IO) a>_R)
+                             w1 of ds1 { (#,#) ipv ipv1 ->
+                      case (Data.Vector.Generic.Mutable.Base.basicInitialize
+                              @ Data.Vector.Unboxed.Base.MVector
+                              @ a
+                              $dMVector1
+                                `cast`
+                              (Data.Vector.Generic.Mutable.Base.MVector
+                                 (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                              @ GHC.Types.IO
+                              Control.Monad.Primitive.$fPrimMonadIO
+                              ipv1)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Data.CircularBuffer.append2
+                             ipv2 of ds { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Data.CircularBuffer.append2
+                             ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                      (# ipv6,
+                         Data.CircularBuffer.CircularBuffer
+                           @ a
+                           ipv1
+                             `cast`
+                           (Data.Vector.Unboxed.Base.MVector
+                              (Control.Monad.Primitive.D:R:PrimStateIO[0]) <a>_N)_R
+                           ww
+                           (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv5)
+                             `cast`
+                           (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                           (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv7)
+                             `cast`
+                           (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N) #) } } } } }) -}
+a6673f0b5d002aae3728060b03435898
+  $wtoList ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.Vector.Unboxed.Base.IOVector a
+    -> GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int
+    -> GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+  {- Arity: 5, Strictness: <L,U(U,A)><L,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (ww :: Data.Vector.Unboxed.Base.IOVector a)
+                   (ww1 :: GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int)
+                   (ww2 :: GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Types.Int)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   $dMVector :: Data.Vector.Generic.Base.Vector
+                                  Data.Vector.Unboxed.Base.Vector a
+                   = Data.Vector.Unboxed.Base.$p1Unbox @ a w
+                 } in
+                 let {
+                   $dMVector1 :: Data.Vector.Generic.Mutable.Base.MVector
+                                   (Data.Vector.Generic.Base.Mutable
+                                      Data.Vector.Unboxed.Base.Vector)
+                                   a
+                   = Data.Vector.Generic.Base.$p1Vector
+                       @ Data.Vector.Unboxed.Base.Vector
+                       @ a
+                       $dMVector
+                 } in
+                 let {
+                   lvl7 :: GHC.Types.Int
+                   = Data.Vector.Generic.Mutable.Base.basicLength
+                       @ Data.Vector.Unboxed.Base.MVector
+                       @ a
+                       $dMVector1
+                         `cast`
+                       (Data.Vector.Generic.Mutable.Base.MVector
+                          (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                       @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                       ww
+                         `cast`
+                       (Data.Vector.Unboxed.Base.MVector
+                          (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])) <a>_N)_R
+                 } in
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ww1
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ww2
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { GHC.Types.I# x ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# x 1#
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Int]
+                         -> GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+                     {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                   = \ (ds :: [GHC.Types.Int])
+                       (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case ds of wild1 {
+                       [] -> (# eta, GHC.Types.[] @ a #)
+                       : y1 ys
+                       -> case y1 of wild2 { GHC.Types.I# x1 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.>=# x1 0#) of wild3 {
+                            GHC.Types.False
+                            -> case lvl7 of wild4 { GHC.Types.I# n# ->
+                               case Data.CircularBuffer.toList2 @ a n# x1
+                               ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+                               of {} }
+                            GHC.Types.True
+                            -> case lvl7 of wild4 { GHC.Types.I# y2 ->
+                               case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.<# x1 y2) of wild5 {
+                                 GHC.Types.False
+                                 -> case Data.CircularBuffer.toList2 @ a y2 x1
+                                    ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+                                    of {}
+                                 GHC.Types.True
+                                 -> case (Data.Vector.Generic.Mutable.Base.basicUnsafeRead
+                                            @ Data.Vector.Unboxed.Base.MVector
+                                            @ a
+                                            $dMVector1
+                                              `cast`
+                                            (Data.Vector.Generic.Mutable.Base.MVector
+                                               (Data.Vector.Unboxed.Base.D:R:MutableVector[0])
+                                               <a>_N)_R
+                                            @ GHC.Types.IO
+                                            Control.Monad.Primitive.$fPrimMonadIO
+                                            ww
+                                              `cast`
+                                            (Data.Vector.Unboxed.Base.MVector
+                                               (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                               <a>_N)_R
+                                            wild2)
+                                           `cast`
+                                         (GHC.Types.N:IO[0] <a>_R)
+                                           eta of ds3 { (#,#) ipv4 ipv5 ->
+                                    case go ys ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                                    (# ipv6, GHC.Types.: @ a ipv5 ipv7 #) } } } } } } }
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0# y) of wild1 {
+                   GHC.Types.False
+                   -> letrec {
+                        go1 :: GHC.Prim.Int# -> [GHC.Types.Int]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ GHC.Types.Int
+                            (case x of wild2 {
+                               DEFAULT
+                               -> case ipv3 of wild3 { GHC.Types.I# x2 ->
+                                  case GHC.Classes.modInt#
+                                         (GHC.Prim.+# x2 x1)
+                                         wild2 of ww3 { DEFAULT ->
+                                  GHC.Types.I# ww3 } }
+                               -1# -> Data.CircularBuffer.append2
+                               0# -> case GHC.Real.divZeroError ret_ty GHC.Types.Int of {} })
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x1 y) of wild2 {
+                               GHC.Types.False -> go1 (GHC.Prim.+# x1 1#)
+                               GHC.Types.True -> GHC.Types.[] @ GHC.Types.Int })
+                      } in
+                      go (go1 0#) ipv2
+                   GHC.Types.True
+                   -> go (GHC.Types.[] @ GHC.Types.Int) ipv2 } } } }) -}
+507eb70a35c1f5dbe18f364668aa1ad6
+  type role CircularBuffer nominal
+  data CircularBuffer a
+    = CircularBuffer {elements :: Data.Vector.Unboxed.Base.IOVector a,
+                      capacity :: {-# UNPACK #-}GHC.Types.Int,
+                      size :: GHC.IORef.IORef GHC.Types.Int,
+                      dial :: GHC.IORef.IORef GHC.Types.Int}
+ada4a69d1ca78da4cefeb4977a03e144
+  append ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.CircularBuffer.CircularBuffer a
+    -> a -> GHC.Types.IO (Data.CircularBuffer.CircularBuffer a)
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(1*U,A)><S(LLLS(S)),1*U(U,U,1*U(U),1*U(U))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.CircularBuffer.append1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Vector.Unboxed.Base.Unbox a>_R
+                 ->_R <Data.CircularBuffer.CircularBuffer a>_R
+                 ->_R <a>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.CircularBuffer.CircularBuffer a>_R)) -}
+c30fa0ad89d983460139a69a873c7bff
+  append1 ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.CircularBuffer.CircularBuffer a
+    -> a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.CircularBuffer.CircularBuffer a #)
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(1*U,A)><S(LLLS(S)),1*U(U,U,1*U(U),1*U(U))><L,U><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (w1 :: Data.CircularBuffer.CircularBuffer a)
+                   (w2 :: a)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { Data.CircularBuffer.CircularBuffer ww1 ww2 ww3 ww4 ->
+                 case ww4
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <GHC.Types.Int>_N) of ww5 { GHC.STRef.STRef ww6 ->
+                 Data.CircularBuffer.$wappend @ a w ww1 ww2 ww3 ww6 w2 w3 } }) -}
+6172e95edcce63b675d68e6de84f03b7
+  append2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+3b0bb74c2c68235ce628aa9f793ec5af
+  append3 :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><L,U>x -}
+c0acc37dea0b6b7ea33880e61c3906c2
+  capacity :: Data.CircularBuffer.CircularBuffer a -> GHC.Types.Int
+  RecSel Left Data.CircularBuffer.CircularBuffer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,U,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.CircularBuffer.CircularBuffer a) ->
+                 case ds of wild { Data.CircularBuffer.CircularBuffer ds1 dt ds2 ds3 ->
+                 GHC.Types.I# dt }) -}
+96ed44630a7d279f2a1e06c73128c48e
+  dial ::
+    Data.CircularBuffer.CircularBuffer a
+    -> GHC.IORef.IORef GHC.Types.Int
+  RecSel Left Data.CircularBuffer.CircularBuffer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.CircularBuffer.CircularBuffer a) ->
+                 case ds of wild { Data.CircularBuffer.CircularBuffer ds1 dt ds2 ds3 ->
+                 ds3 }) -}
+2f7b6c6d0c3c0b361f5962ab6106c82e
+  elements ::
+    Data.CircularBuffer.CircularBuffer a
+    -> Data.Vector.Unboxed.Base.IOVector a
+  RecSel Left Data.CircularBuffer.CircularBuffer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.CircularBuffer.CircularBuffer a) ->
+                 case ds of wild { Data.CircularBuffer.CircularBuffer ds1 dt ds2 ds3 ->
+                 ds1 }) -}
+628e819bbe34801b44046a326bd70701
+  new ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    GHC.Types.Int
+    -> GHC.Types.IO (Data.CircularBuffer.CircularBuffer a)
+  {- Arity: 3, Strictness: <S(SL),1*U(1*U,A)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.CircularBuffer.new1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Vector.Unboxed.Base.Unbox a>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.CircularBuffer.CircularBuffer a>_R)) -}
+b58561416c1e90ecc3169a28c9e2a77c
+  new1 ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.CircularBuffer.CircularBuffer a #)
+  {- Arity: 3, Strictness: <S(SL),1*U(1*U,A)><S(S),1*U(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Data.CircularBuffer.$wnew @ a w ww1 w2 }) -}
+fd5c1508ea85a1c3d74ffe556a6085e1
+  new2 ::
+    GHC.Prim.Int#
+    -> GHC.Types.IO
+         (Data.Vector.Unboxed.Base.MVector
+            (Control.Monad.Primitive.PrimState GHC.Types.IO) a)
+  {- Arity: 1, Strictness: <L,U>x -}
+a488f26d3e4f2f9558e4480419148125
+  size ::
+    Data.CircularBuffer.CircularBuffer a
+    -> GHC.IORef.IORef GHC.Types.Int
+  RecSel Left Data.CircularBuffer.CircularBuffer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.CircularBuffer.CircularBuffer a) ->
+                 case ds of wild { Data.CircularBuffer.CircularBuffer ds1 dt ds2 ds3 ->
+                 ds2 }) -}
+6c0ba9c10536ff4298444e905f49d607
+  toList ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.CircularBuffer.CircularBuffer a -> GHC.Types.IO [a]
+  {- Arity: 3,
+     Strictness: <L,U(U,A)><S(LLS(S)S(S)),1*U(U,A,1*U(U),1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.CircularBuffer.toList1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Vector.Unboxed.Base.Unbox a>_R
+                 ->_R <Data.CircularBuffer.CircularBuffer a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <[a]>_R)) -}
+840b244ae25eedf2a87f9fa4eb34c3b0
+  toList1 ::
+    Data.Vector.Unboxed.Base.Unbox a =>
+    Data.CircularBuffer.CircularBuffer a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+  {- Arity: 3,
+     Strictness: <L,U(U,A)><S(LLS(S)S(S)),1*U(U,A,1*U(U),1*U(U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (w1 :: Data.CircularBuffer.CircularBuffer a)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { Data.CircularBuffer.CircularBuffer ww1 ww2 ww3 ww4 ->
+                 case ww3
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <GHC.Types.Int>_N) of ww5 { GHC.STRef.STRef ww6 ->
+                 case ww4
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <GHC.Types.Int>_N) of ww7 { GHC.STRef.STRef ww8 ->
+                 Data.CircularBuffer.$wtoList @ a w ww1 ww6 ww8 w2 } } }) -}
+493ab96b249e78d0a74ea11dac89cc06
+  toList2 :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.IO a
+  {- Arity: 2, Strictness: <L,U><L,U>x -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
